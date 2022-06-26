@@ -1,0 +1,88 @@
+/* 0 Variables */
+:root {
+
+}
+/* 1 Variables */
+
+/* 0 Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;   
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration:none; 
+  text-transform:capitalize;
+}
+
+button {
+  border:none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:red;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+   .container {
+    width: 570px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .container {
+    width: 570px;
+  }  
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* 1 Global Rules */
+
+/* 0 Header */
+
+/* 1 Header */
+
+/* 0 land */
+
+/* 1 land */
+
+
+/* 0 footer */
+
+/* 1 footer */
+
+
