@@ -1,6 +1,6 @@
 /* 0 Variables */
 :root {
-
+  --main-color:#39C1A3;
 }
 /* 1 Variables */
 
@@ -17,7 +17,8 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;   
+  font-family: "Open Sans", sans-serif; 
+  background-color:#1E1A31;  
 }
 
 ul {
@@ -72,6 +73,126 @@ button {
 /* 1 Global Rules */
 
 /* 0 Header */
+
+header{
+}
+
+header .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:relative;
+}
+
+header .container::after{
+  content:"";
+  position:absolute;
+  height:1px;
+  background-color:white;
+  width:calc(100% - 30px);
+  bottom:0;
+  left:15px;
+  z-index:-1;
+}
+
+header .container ul .logo img {
+  height:40px;
+}
+
+span {
+  color:white;
+}
+
+header .container nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@media (max-width:767px) {
+  .container {
+    max-width:600px;
+  }
+  nav ul {
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-basis:100%;
+    background-color:red;
+  }
+  header nav ul li a {
+    padding:15px !important;
+  }
+
+  .form,header .container::after {
+    display:none;
+  }
+}
+
+header nav ul li a {
+  padding: 30px 8px;
+  display: block;
+  color: var(--main-color);
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  border-bottom: 1px solid #39C1A3;
+}
+
+header nav ul li a.active {
+  color:white;
+}
+
+header nav ul li a:hover {
+  color:white;
+}
+
+.form {
+  width: 30px;
+  height: 30px;
+  background-color:var(--main-color);
+  position: relative; 
+  border: 1px solid var(--main-color);
+}
+
+.form::before {
+  content:"search";
+  color:#ddd;
+  position:absolute;
+  background-color:white;
+  width:540%;
+  height:100%;
+  border-radius:8px;
+  left:-160px;
+}
+
+
+.form i { 
+  left:50%;
+  top: 50%; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  transition:0.5s;
+}
+
+.form:hover {
+  border-color:black;
+}
+.form i:hover {
+  color:black;
+}
 
 /* 1 Header */
 
