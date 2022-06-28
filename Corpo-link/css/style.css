@@ -231,10 +231,12 @@ header nav ul li a:hover {
   padding:9px;
   background-color:var(--main-color);
   border-radius:5px;
+   transition:0.3s;
 }
 
 .landing .container .bio .bio-link button a {
    color:white;
+
 }
 
 .landing .container .bio .bio-link button:hover {
@@ -263,6 +265,7 @@ header nav ul li a:hover {
 .features .container h1 {
   text-align:center;
   color:white;
+  margin-bottom:20px;
 } 
 .features .container h2 {
   text-align:center;
@@ -272,13 +275,31 @@ header nav ul li a:hover {
 
 .features .container .key-photo img {
   height:350px;
+  margin-right:0px;
 }
 
 .grid {
   display:grid;
   grid-template-columns:repeat(3, 1fr);
- 
 }
+
+@media (max-width: 992px) {
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(2,50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .grid {
+    display:flex;
+    justify-content:center ;
+    align-items:center;
+    flex-direction:column;
+  }
+}
+
 
 .box {
   position:relative;
