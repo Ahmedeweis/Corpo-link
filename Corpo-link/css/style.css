@@ -11,6 +11,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-transform:capitalize;
 }
 html {
   scroll-behavior: smooth;
@@ -73,7 +74,6 @@ button {
 /* 1 Global Rules */
 
 /* 0 Header */
-
 header{
 }
 
@@ -118,14 +118,12 @@ nav ul {
 
 @media (max-width:767px) {
   .container {
-    max-width:600px;
+    max-width:500px;
   }
   nav ul {
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
     flex-basis:100%;
-    background-color:red;
+    background-color:#24243E;
   }
   header nav ul li a {
     padding:15px !important;
@@ -193,16 +191,166 @@ header nav ul li a:hover {
 .form i:hover {
   color:black;
 }
-
 /* 1 Header */
 
 /* 0 land */
+.landing .container  {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:row-reverse;
+}
 
+@media (max-width: 768px) {
+  .landing .container {
+    flex-direction:column;
+  }
+}
+
+.landing .container .bio h1 {
+  color:white;
+  font-size:30px;
+  padding-bottom:20px;
+}
+
+.landing .container .bio h2{
+  color:#aaa;
+  margin-bottom:10px;
+}
+
+.landing .container .bio p {
+    padding-bottom:20px;
+    color:#ccc;
+}
+
+.landing .container .bio .bio-link span {
+    color: var(--main-color);
+}
+
+.landing .container .bio .bio-link button {
+  padding:9px;
+  background-color:var(--main-color);
+  border-radius:5px;
+}
+
+.landing .container .bio .bio-link button a {
+   color:white;
+}
+
+.landing .container .bio .bio-link button:hover {
+   background-color:#322C62;
+   color:white;
+}
+
+.land-img img {
+  height:400px;
+}
+
+@media (max-width: 992px) {
+  .land-img img {
+    height:350px;
+ }
+}
 /* 1 land */
 
+/* 0 Our Key features  */
+.features {
+  background-color:#262340;
+  margin-top:30px;
+  padding:30px 0;
+}
+
+.features .container h2,.features .container h1 {
+  text-align:center;
+} 
+
+.features .container .key-photo img {
+  height:350px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+ 
+}
+
+.box {
+  position:relative;
+  padding:20px;
+  margin:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0, 0, 0,0.5);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 450px;
+  background: linear-gradient(#00ccff,#d400d4);
+  animation: animate 3s linear infinite;
+}
+
+.box::after {
+  content:"";
+  position:absolute;
+  inset:3px;
+  background-color:#1E1A31;
+  border-radius:5px;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  25%
+  {
+    transform: rotate(90deg);
+  }
+  50%
+  {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform:rotate(270deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+
+
+.box .box-info h3,.box .box-info p, .box img  {
+  color:white;
+  position:relative;
+  z-index:10;
+}
+
+.box img {
+  margin-top:-70px;
+  margin-right:10px;
+}
+
+
+.box-info h3 {
+ color:white;
+ font-size:1.5em;
+}
+
+/* 1 Our Key features  */
 
 /* 0 footer */
 
 /* 1 footer */
+
+/* 0  */
+
+/* 1  */
 
 
