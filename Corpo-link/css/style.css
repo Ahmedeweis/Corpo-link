@@ -20,6 +20,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif; 
   background-color:#1E1A31;  
+  z-index:1;
 }
 
 ul {
@@ -33,6 +34,31 @@ a {
 
 button {
   border:none;
+}
+                      /*| none        | blur()         |* brightness() 
+                        | contrast()  |* drop-shadow() |* grayscale()
+                        | hue-rotate()|* invert()      |* opacity() 
+                        |* saturate() | sepia()       | url()
+                        filters
+                        drop-shadow(0 0 0.75rem #D400D4); 
+                        drop-shadow(0 0 0.75rem crimson);
+
+                        brightness(50%); 
+                        brightness(100%);
+
+                        grayscale(0%);
+                        grayscale(100%);
+
+                        invert(0%); 
+                        invert(100%);
+                      */
+.imgg {
+  transition:0.3s;
+  filter:drop-shadow(0 0 0.75rem #D400D4);
+}
+
+.imgg:hover {
+  filter: drop-shadow(0 0 0.75rem #00CCFF ) ;
 }
 
 .container {
@@ -300,7 +326,6 @@ header nav ul li a:hover {
   }
 }
 
-
 .box {
   position:relative;
   padding:20px;
@@ -364,13 +389,72 @@ header nav ul li a:hover {
   margin-right:10px;
 }
 
-
 .box-info h3 {
  color:white;
  font-size:1.5em;
 }
 
 /* 1 Our Key features  */
+
+/* 0 Guiding businness */
+
+.Guiding {
+  background-color:#1E1A31;
+  z-index:2;
+}
+
+.gridII {
+  gap:10px 20px;
+}
+
+.flex-box {
+display: flex;
+flex-direction:column;
+justify-content:space-between;
+align-items:center;
+text-align:center;
+border: 3px solid #131120;
+border-radius:9px;
+padding:20px;
+position:relative;
+background-color:#1E1A31;
+z-index:3;
+}
+
+.flex-box .box-info p {
+  color:#bcb5ff;
+  z-index:4;
+}
+
+.flex-box::before {
+  content:"";
+  height:50%;
+  width:25%;
+  background-color:#1E1A31  ;
+  position:absolute;
+  top:0;
+  right:0;
+  border:3px solid;
+  border-color:#00ccff #00ccff transparent transparent; 
+  border-radius:5px;
+  z-index:3;
+}
+
+.flex-box::after {
+  content:"";
+  height:50%;
+  width:25%;
+  background-color:#1E1A31  ;
+  position:absolute;
+  bottom:0;
+  left:0;
+  border:3px solid;
+  border-color: transparent transparent #d400d4 #d400d4; 
+  border-radius:5px;
+  z-index: -1;
+}
+
+/* 0 Guiding businness */
 
 /* 0 footer */
 
