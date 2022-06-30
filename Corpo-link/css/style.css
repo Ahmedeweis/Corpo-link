@@ -331,9 +331,6 @@ header nav ul li a:hover {
     align-items:center;
     flex-direction:column;
   }
-  .features {
-  width:200%;
-  }    
 }
 
 .box {
@@ -411,13 +408,6 @@ header nav ul li a:hover {
 .Guiding {
   background-color:#1E1A31;
   z-index:2;
-}
-
-@media (max-width: 768px) {
-  .company {
-  width:200%;
-  overflow-x:hidden;
-  }    
 }
 
 .gridII {
