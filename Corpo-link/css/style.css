@@ -642,16 +642,152 @@ z-index:3;
 }
 /* 1 Stats */
 
-/*  */
-/*  */
-/*  */
-/*  */
+.work-with {
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:20px;
+  min-width:50%;
+}
+
+.work-with .grid-box {
+  background-color:#1E1B30;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+  border-radius:8px;
+  transition:0.6s;
+}
+
+.work-with .grid-box:hover {
+  background-color:white;
+  filter: drop-shadow(0 0 0.75rem #00CCFF);
+}
+
+.work-with .grid-box p {
+  color: #777;
+  font-size:22px;
+  font-weight:bold;
+}
+
+
+/* 0 partners */
+.partners {
+  padding:60px;
+  margin: 30px 0;
+} 
+
+
+@media (max-width: 992px) {
+  .partners .container {
+    flex-direction:column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .partners .container {
+    display:none;
+  }
+}
+.partners .container .tools {
+  display: flex;
+  justify-content:space-between;
+  align-items: center; 
+}
+
+.partners .container .tools div {
+ width:15%;
+ background-color:white;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ border-radius:8px;
+ padding:10px;
+}
+
+.partners .container .tools div:hover{
+  background-color:#1E1A31;
+}
+/* 1 partners */
+
+/* 0 contact */
+
+.sec .stats .container{
+  display:flex;
+  justify-content:space-between;
+  background-color:#1E1A31;
+}
+
+.sec .stats .container .boxx {
+  background-color:transparent;
+}
+
+#container {
+  background-color:#262340;
+}
+
+#big-box {
+  background-color:#262340;
+}
+
+#big-box .boxx h1 {
+  color:white;
+}
+
+#big-box  .boxx  img {
+  width:50px;
+}
+
+@media (max-width: 992px) {
+  .sec .stats .container{
+   display: grid;
+   grid-template-columns:repeat(3, 1fr);
+   gap: 20px;
+  }
+  #big-box  .boxx  img {
+  width:50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec .stats .container{
+    flex-direction:column;
+  }
+
+}
+/* 0 contact */
+
 /* 0 footer */
+.footer {
+  padding-bottom:30px;
+  background-image:url("../images/footer.jpg");
+  background-size:cover;
+  opacity:0.9;
+  color:white;
+}
 
+.footer .container {
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:25px;
+}
+
+.boxy h2 {
+  margin: 20px 0px;
+}
+
+.boxy p {
+  margin: 20px 0px;
+}
+.boxy a {
+  margin: 20px 0px;
+  color:white;
+}
+
+.foot-icons i {
+  margin-right:30px;
+}
 /* 1 footer */
-
-/* 0  */
-
-/* 1  */
 
 
